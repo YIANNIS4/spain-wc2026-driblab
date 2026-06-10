@@ -197,7 +197,7 @@ Driblab Arrigo Platform. La Liga 2025/26 player data. Accessed June 2026.
 **Yiannis Kastritis**
 Football Data Analyst | MSc Football Data Analytics (UCAM Murcia / Sports Data Campus)
 
-🌐 [yiannis4.github.io](https://yiannis4.github.io) · 💻 [github.com/YIANNIS4](https://github.com/YIANNIS4)
+🌐 [yiannis4.github.io](https://yiannis4.github.io) · 💼 [LinkedIn](https://www.linkedin.com/in/yiannis-kastritis-a417bb122)
 
 ---
 
