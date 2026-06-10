@@ -83,7 +83,9 @@ Measures how closely each player's physical profile aligns with Spain's specific
 | Lamine Yamal | 78.5 | 74.7 | 76.6 |
 | Dani Olmo | 70.4 | 65.4 | 67.9 |
 
-![Readiness Index Ranking](visuals/world_cup_readiness_index_hero_ranking.png)
+## Readiness Index Ranking
+
+![World Cup Readiness Index](visuals/world_cup_readiness_index_hero_ranking.png)
 
 ### Layer 3 — Game Intelligence Profiles
 
@@ -107,19 +109,21 @@ Layer 3 is not scored. Arrigo metrics are interpreted as season-level intelligen
 
 **Key Finding:** Dani Olmo — the player with the lowest Readiness Index — produces the most complete game intelligence profile across both progression and final-third access metrics. Physical readiness and game intelligence are related, but they are not the same thing.
 
-![Spain 2026 Physical Readiness vs Game Intelligence](visuals/physical_vs_intelligence_scatter.png)
+## Spain 2026 Physical Readiness vs Game Intelligence
+
+![Physical Readiness vs Game Intelligence](visuals/spain_readiness_vs_intelligence_methodology.png)
 
 #### Pedri — The Progression Engine (DMC)
 
 No player dominated the progression metrics more than Pedri. He ranked in the 100th percentile for line-breaking passes, line-breaking through balls and bypassed defenders among his La Liga positional peers — producing elite attacking-midfielder numbers from a deeper role.
 
-![Pedri Game Intelligence Profile](visuals/layer3_pedri.png)
+![Pedri Game Intelligence Profile](visuals/pedri_layer3_profile.png)
 
 #### Dani Olmo — The Link (AMC)
 
 The most complete profile in the group across both progression and final-third access. Despite recording the lowest Readiness Index, Olmo was the only player who looked equally comfortable connecting attacks and arriving at the end of them.
 
-![Dani Olmo Game Intelligence Profile](visuals/layer3_dani_olmo.png)
+![Dani Olmo Game Intelligence Profile](visuals/olmo_layer3_profile.png)
 
 #### Yamal vs Nico Williams — Same Role, Different Solution
 
@@ -133,7 +137,8 @@ Together the six profiles point toward an interconnected attacking network rathe
 
 The network is not intended to represent fixed tactical positions, but the primary progression and final-third relationships identified through the analysis.
 
-![Spain Progression and Final Third Network](visuals/spain_attacking_network.png)
+
+![Spain Progression and Final Third Network](visuals/spain_progression_final_third_network.png)
 
 ---
 
