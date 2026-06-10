@@ -167,11 +167,14 @@ Investigates how each player contributes to the progression and final-third acti
 
 ```
 ├── Spain_2026.ipynb          # Main analysis notebook
-├── layer1_physical_profile.csv   # Layer 1 output data
-├── layer2_spain_identity.csv     # Layer 2 output data
-├── readiness_index_final.csv     # Readiness Index output
-├── player_reference.csv          # Player IDs and metadata
-└── README.md
+├── README.md                 # Project documentation
+└── visuals/                  # All project charts
+    ├── world_cup_readiness_index_hero_ranking.png
+    ├── physical_vs_intelligence_scatter.png
+    ├── layer3_pedri.png
+    ├── layer3_dani_olmo.png
+    ├── layer3_yamal_vs_nico_radar.png
+    └── spain_attacking_network.png
 ```
 
 ---
