@@ -131,6 +131,8 @@ Both contribute to Spain's attack but through different mechanisms. Yamal's prof
 
 Together the six profiles point toward an interconnected attacking network rather than a linear chain — each player contributing to a different stage of the same mechanism.
 
+The network is not intended to represent fixed tactical positions, but the primary progression and final-third relationships identified through the analysis.
+
 ![Spain Progression and Final Third Network](visuals/spain_attacking_network.png)
 
 ---
