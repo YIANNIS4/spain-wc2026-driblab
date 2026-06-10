@@ -1,4 +1,4 @@
-# Spain World Cup 2026 — Physical Readiness & Game Intelligence Analysis | Data: Driblab La Liga 2025/26 | Framework: Bradley Qatar 2022
+# Spain World Cup 2026 - Physical Readiness & Game Intelligence Analysis | Data: Driblab La Liga 2025/26 | Framework: Bradley Qatar 2022
 
 **Are Spain's key La Liga players physically and tactically ready for the 2026 World Cup?**
 
