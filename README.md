@@ -1,6 +1,7 @@
-# Spain World Cup 2026 - Physical Readiness & Game Intelligence Analysis | Data: Driblab La Liga 2025/26 | Framework: Bradley Qatar 2022
+# Spain World Cup 2026 - Physical Readiness & Game Intelligence Analysis
+**Data: Driblab La Liga 2025/26 | Framework: Bradley Qatar 2022**
 
-**Are Spain's key La Liga players physically and tactically ready for the 2026 World Cup?**
+Are Spain's key La Liga players physically and tactically ready for the 2026 World Cup?
 
 This project combines season-long La Liga 2025/26 club data from Driblab with physical benchmarks derived from Paul Bradley's peer-reviewed research on the FIFA World Cup Qatar 2022 to assess the physical readiness and game intelligence profiles of six Spain internationals.
 
@@ -18,7 +19,7 @@ This project combines season-long La Liga 2025/26 club data from Driblab with ph
 
 ## Published Article
 
-[Beyond Physical Readiness: Who Is Driving Spain's Attack Ahead of the 2026 World Cup?](#)
+📄 [Beyond Physical Readiness: Who Is Driving Spain's Attack Ahead of the 2026 World Cup?](https://yiannis4.github.io/Beyond_Physical_Readiness.pdf)
 
 ---
 
@@ -53,8 +54,6 @@ Measures whether each player's La Liga physical output meets the positional stan
 
 **Method:** Each metric expressed as a percentage of the Qatar 2022 positional benchmark. Four percentages averaged and capped at 100.
 
----
-
 ### Layer 2 — Spain Physical Identity Fit Score
 
 Measures how closely each player's physical profile aligns with Spain's specific physical identity at Qatar 2022.
@@ -71,31 +70,24 @@ Measures how closely each player's physical profile aligns with Spain's specific
 - High Intensity Distance Z4+Z5
 - Sprint Distance Z5
 
----
-
 ### Readiness Index
 
-```
-Readiness Index = (Physical Readiness Score + Spain Physical Identity Fit Score) / 2
-```
+**Readiness Index = (Physical Readiness Score + Spain Physical Identity Fit Score) / 2**
 
 | Player | Physical | Identity | Readiness Index |
 |--------|----------|----------|-----------------|
-| Pau Cubarsí | 100.0 | 100.0 | **100.0** |
-| Mikel Oyarzabal | 100.0 | 100.0 | **100.0** |
-| Pedri | 87.7 | 87.6 | **87.6** |
-| Nico Williams | 80.9 | 77.9 | **79.4** |
-| Lamine Yamal | 78.5 | 74.7 | **76.6** |
-| Dani Olmo | 70.4 | 65.4 | **67.9** |
+| Pau Cubarsí | 100.0 | 100.0 | 100.0 |
+| Mikel Oyarzabal | 100.0 | 100.0 | 100.0 |
+| Pedri | 87.7 | 87.6 | 87.6 |
+| Nico Williams | 80.9 | 77.9 | 79.4 |
+| Lamine Yamal | 78.5 | 74.7 | 76.6 |
+| Dani Olmo | 70.4 | 65.4 | 67.9 |
 
 ![Readiness Index Ranking](visuals/world_cup_readiness_index_hero_ranking.png)
-
----
 
 ### Layer 3 — Game Intelligence Profiles
 
 Investigates how each player contributes to the progression and final-third actions most strongly associated with Spain's physical identity — motivated by Bradley's Part 2 correlations:
-
 - Progression events — r=0.73
 - Final third entries — r=0.75
 
@@ -111,7 +103,7 @@ Investigates how each player contributes to the progression and final-third acti
 - Nico → AML (13 peers)
 - Oyarzabal → FW (51 peers)
 
-**Layer 3 is not scored.** Arrigo metrics are interpreted as season-level intelligence profiles and are therefore presented descriptively rather than aggregated into a single score. Percentile rankings against La Liga positional peers provide the comparative context.
+Layer 3 is not scored. Arrigo metrics are interpreted as season-level intelligence profiles and are therefore presented descriptively rather than aggregated into a single score. Percentile rankings against La Liga positional peers provide the comparative context.
 
 **Key Finding:** Dani Olmo — the player with the lowest Readiness Index — produces the most complete game intelligence profile across both progression and final-third access metrics. Physical readiness and game intelligence are not always the same thing.
 
@@ -136,19 +128,16 @@ Investigates how each player contributes to the progression and final-third acti
 | Bradley Part 1 | Qatar 2022 positional physical benchmarks |
 | Bradley Part 2 | Qatar 2022 team physical identity and tactical correlations |
 
-**Note:** Driblab API access was provided through a collaboration with Driblab. API credentials are not included in this repository. Replace `API_TOKEN = ""` in the setup cells with your own token to reproduce the data pull.
+> **Note:** Driblab API access was provided through a collaboration with Driblab. API credentials are not included in this repository. Replace `API_TOKEN = ""` in the setup cells with your own token to reproduce the data pull.
 
 ---
 
 ## Methodology Notes
 
-**Game filtering threshold:** 70% of each player's personal median total distance. Games below this threshold are excluded as unrepresentative of full physical output — injury returns, substitution appearances and tactical rest games.
-
-**Speed thresholds:** Driblab uses 19.8 km/h and 25.2 km/h. Bradley uses 20.0 km/h and 25.0 km/h. The difference is negligible and acknowledged in the limitations.
-
-**Pedri positional note:** Driblab classifies Pedri as DMC. His Layer 3 percentiles reflect that peer group — defensive and central midfielders — rather than a pure attacking midfielder comparison. His game intelligence profile far exceeds the typical DMC profile.
-
-**Spain Part 2 ratios:** Team totals applied to positional benchmarks from Part 1. This assumes Spain's physical identity was consistent across positions — a simplification acknowledged given Part 2 presents team not player level data.
+- **Game filtering threshold:** 70% of each player's personal median total distance. Games below this threshold are excluded as unrepresentative of full physical output — injury returns, substitution appearances and tactical rest games.
+- **Speed thresholds:** Driblab uses 19.8 km/h and 25.2 km/h. Bradley uses 20.0 km/h and 25.0 km/h. The difference is negligible and acknowledged in the limitations.
+- **Pedri positional note:** Driblab classifies Pedri as DMC. His Layer 3 percentiles reflect that peer group — defensive and central midfielders — rather than a pure attacking midfielder comparison. His game intelligence profile far exceeds the typical DMC profile.
+- **Spain Part 2 ratios:** Team totals applied to positional benchmarks from Part 1. This assumes Spain's physical identity was consistent across positions — a simplification acknowledged given Part 2 presents team not player level data.
 
 ---
 
@@ -183,21 +172,21 @@ Investigates how each player contributes to the progression and final-third acti
 
 1. Clone the repository
 2. Install dependencies:
-```bash
+```
 pip install requests pandas numpy matplotlib scipy
 ```
 3. Add your Driblab API token to each setup cell where `API_TOKEN = ""`
-4. Run all cells in order — Runtime → Run All in Google Colab or Jupyter
+4. Run all cells in order — **Runtime → Run All** in Google Colab or Jupyter
 
-**Note:** The API token expires periodically. If cells fail with authentication errors regenerate your token from the Driblab platform and update the setup cells.
+> **Note:** The API token expires periodically. If cells fail with authentication errors regenerate your token from the Driblab platform and update the setup cells.
 
 ---
 
 ## References
 
-Bradley, P. S., Ade, J., Peart, D., Sheldon, W., & Olsen, P. (2024). *Setting the Benchmark Part 1: Physical Performance Profiles at the FIFA World Cup Qatar 2022*. Biology of Sport, 41(1), 261–270.
+Bradley, P. S., Ade, J., Peart, D., Sheldon, W., & Olsen, P. (2024). Setting the Benchmark Part 1: Physical Performance Profiles at the FIFA World Cup Qatar 2022. *Biology of Sport, 41*(1), 261–270.
 
-Bradley, P. S., Ade, J., Peart, D., Sheldon, W., & Olsen, P. (2024). *Setting the Benchmark Part 2: Physical Demands and Team Success at the FIFA World Cup Qatar 2022*. Biology of Sport, 41(1), 271–278.
+Bradley, P. S., Ade, J., Peart, D., Sheldon, W., & Olsen, P. (2024). Setting the Benchmark Part 2: Physical Demands and Team Success at the FIFA World Cup Qatar 2022. *Biology of Sport, 41*(1), 271–278.
 
 Driblab Arrigo Platform. La Liga 2025/26 player data. Accessed June 2026.
 
@@ -208,7 +197,8 @@ Driblab Arrigo Platform. La Liga 2025/26 player data. Accessed June 2026.
 **Yiannis Kastritis**
 Football Data Analyst | MSc Football Data Analytics (UCAM Murcia / Sports Data Campus)
 
-Portfolio: [yiannis4.github.io](https://yiannis4.github.io)
-GitHub: [github.com/YIANNIS4](https://github.com/YIANNIS4)
+🌐 [yiannis4.github.io](https://yiannis4.github.io) · 💻 [github.com/YIANNIS4](https://github.com/YIANNIS4)
+
+---
 
 *Data provided by Driblab. Framework inspired by Paul Bradley's Setting the Benchmark research series.*
