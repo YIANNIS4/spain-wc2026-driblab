@@ -1,4 +1,4 @@
-# Spain World Cup 2026 - Physical Readiness & Game Intelligence Analysis
+# Spain 2026 : Physical Readiness & Game Intelligence Analysis
 **Data: Driblab La Liga 2025/26 | Framework: Bradley Qatar 2022**
 
 Are Spain's key La Liga players physically and tactically ready for the 2026 World Cup?
@@ -38,7 +38,7 @@ This project combines season-long La Liga 2025/26 club data from Driblab with ph
 
 ## Project Structure
 
-The analysis is built across three layers.
+The analysis is built across three layers. The framework separates physical readiness from tactical contribution before combining both perspectives to interpret each player's role within Spain's attacking structure.
 
 ### Layer 1 — Physical Readiness Score
 
@@ -91,9 +91,9 @@ Investigates how each player contributes to the progression and final-third acti
 - Progression events — r=0.73
 - Final third entries — r=0.75
 
-**Data:** Driblab Arrigo metrics — all 611 La Liga players, one API call, season totals.
+**Data:** Driblab Arrigo metrics — season totals across all La Liga players, one API call.
 
-**Method:** Per 90 conversion of counting metrics. Percentile rankings against La Liga positional peers with minimum 900 minutes threshold.
+**Method:** Per 90 conversion of counting metrics. Percentile rankings benchmarked against La Liga positional peers with minimum 900 minutes threshold.
 
 **Positional peer groups:**
 - Cubarsí → DC (73 peers)
@@ -105,15 +105,31 @@ Investigates how each player contributes to the progression and final-third acti
 
 Layer 3 is not scored. Arrigo metrics are interpreted as season-level intelligence profiles and are therefore presented descriptively rather than aggregated into a single score. Percentile rankings against La Liga positional peers provide the comparative context.
 
-**Key Finding:** Dani Olmo — the player with the lowest Readiness Index — produces the most complete game intelligence profile across both progression and final-third access metrics. Physical readiness and game intelligence are not always the same thing.
+**Key Finding:** Dani Olmo — the player with the lowest Readiness Index — produces the most complete game intelligence profile across both progression and final-third access metrics. Physical readiness and game intelligence are related, but they are not the same thing.
 
 ![Spain 2026 Physical Readiness vs Game Intelligence](visuals/physical_vs_intelligence_scatter.png)
 
+#### Pedri — The Progression Engine (DMC)
+
+No player dominated the progression metrics more than Pedri. He ranked in the 100th percentile for line-breaking passes, line-breaking through balls and bypassed defenders among his La Liga positional peers — producing elite attacking-midfielder numbers from a deeper role.
+
 ![Pedri Game Intelligence Profile](visuals/layer3_pedri.png)
+
+#### Dani Olmo — The Link (AMC)
+
+The most complete profile in the group across both progression and final-third access. Despite recording the lowest Readiness Index, Olmo was the only player who looked equally comfortable connecting attacks and arriving at the end of them.
 
 ![Dani Olmo Game Intelligence Profile](visuals/layer3_dani_olmo.png)
 
+#### Yamal vs Nico Williams — Same Role, Different Solution
+
+Both contribute to Spain's attack but through different mechanisms. Yamal's profile is built around receiving, carrying and creating after receiving. Nico's is more direct — running into space and arriving in dangerous areas.
+
 ![Yamal vs Nico Attacking Profile](visuals/layer3_yamal_vs_nico_radar.png)
+
+#### Spain's Progression & Final-Third Network
+
+Together the six profiles point toward an interconnected attacking network rather than a linear chain — each player contributing to a different stage of the same mechanism.
 
 ![Spain Progression and Final Third Network](visuals/spain_attacking_network.png)
 
@@ -134,7 +150,7 @@ Layer 3 is not scored. Arrigo metrics are interpreted as season-level intelligen
 
 ## Methodology Notes
 
-- **Game filtering threshold:** 70% of each player's personal median total distance. Games below this threshold are excluded as unrepresentative of full physical output — injury returns, substitution appearances and tactical rest games.
+- **Game filtering threshold:** 70% of each player's personal median total distance. This threshold was selected as a conservative outlier filter, removing matches unlikely to represent normal physical capacity while preserving the majority of valid observations.
 - **Speed thresholds:** Driblab uses 19.8 km/h and 25.2 km/h. Bradley uses 20.0 km/h and 25.0 km/h. The difference is negligible and acknowledged in the limitations.
 - **Pedri positional note:** Driblab classifies Pedri as DMC. His Layer 3 percentiles reflect that peer group — defensive and central midfielders — rather than a pure attacking midfielder comparison. His game intelligence profile far exceeds the typical DMC profile.
 - **Spain Part 2 ratios:** Team totals applied to positional benchmarks from Part 1. This assumes Spain's physical identity was consistent across positions — a simplification acknowledged given Part 2 presents team not player level data.
