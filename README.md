@@ -17,9 +17,11 @@ This project combines season-long La Liga 2025/26 club data from Driblab with ph
 
 ---
 
-## Published Article
+## Published Article in English and Spanish
 
 📄 [Beyond Physical Readiness: Who Is Driving Spain's Attack Ahead of the 2026 World Cup?](https://yiannis4.github.io/Beyond_Physical_Readiness.pdf)
+
+📄 [Más Allá de la Preparación Física (ES)](https://yiannis4.github.io/Mas_Alla_de_la_Preparacion_Fisica.pdf)
 
 ---
 
